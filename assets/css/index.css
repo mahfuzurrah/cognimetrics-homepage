@@ -462,12 +462,6 @@ footer .email {
   .section4 .text-wrapper {
     max-width: 100%;
   }
-  .section5 .countries {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    white-space: none;
-  }
   .section-headline {
     font-size: 8vw;
   }
@@ -487,6 +481,11 @@ footer .email {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .section5 .countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -498,6 +497,11 @@ footer .email {
   }
   h2 {
     font-size: 6vw;
+  }
+  .section5 .countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 }
 
