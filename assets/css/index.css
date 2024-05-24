@@ -216,9 +216,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  margin: 4rem 0;
-  gap: 24px;
+  gap: 3rem;
   row-gap: 3rem;
+  max-width: 1000px;
+  margin: 4rem auto;
 }
 .section2 .cards.hide-additional .card:nth-child(n + 4) {
   display: none;
