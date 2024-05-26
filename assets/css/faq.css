@@ -11,21 +11,20 @@ body {
   background-color: #f3f3f5;
 }
 
-*::after,
-*::before {
-  content: "";
-  background: none !important;
-}
-
 body {
   background-color: #f3f3f5;
 }
 
 .faq-items li a::after,
 .faq-items li a::before {
+  content: "";
   background-color: #8c8c8e !important;
 }
 
+.ex_class {
+  position: fixed;
+  width: 100%;
+}
 /* -------------------------------- 
 
 Main components 
@@ -77,6 +76,10 @@ header h1 {
     position: relative;
     margin: 4em auto;
     box-shadow: none;
+  }
+  .ex_class .faq-items {
+    height: 80vh;
+    overflow-y: auto;
   }
 }
 
@@ -196,7 +199,6 @@ header h1 {
   padding: 0 5% 1em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 1;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0) translateX(100%);
@@ -310,6 +312,9 @@ header h1 {
 
 .cd-close-panel.move-left {
   right: 2%;
+  top: 20px;
+  color: #000;
+  font-size: 35px;
 }
 
 @media only screen and (min-width: 768px) {
