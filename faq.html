@@ -1,1035 +1,1105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <style>
+      .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frequently Asked Questions</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
-  <style>
-    .button-link {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 0;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
+      .button-link:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
 
-    .button-link:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Frequently Asked Questions</h1>
-  </header>
-  <div style="text-align: left; margin: 20px; padding-left: 260px">
-    <a href="index.html" class="button-link">Back to Home</a>
-  </div>
-  <section class="faq">
-    <ul class="categories">
-      <li><a class="selected" href="#basics">Overview</a></li>
-      <li><a href="#mobile">IQ Tests</a></li>
-      <li><a href="#account">Interpretation</a></li>
-      <li><a href="#payments">Miscellaneous</a></li>
-      <li><a href="#privacy">g-Loadings</a></li>
-    </ul>
-    <!-- categories -->
-
-    <div class="faq-items">
-      <ul id="basics" class="faq-group">
-        <li class="faq-title">
-          <h2>Overview on IQ</h2>
-        </li>
-        <li>
-          <a class="trigger" href="#0">What is IQ?</a>
-          <div class="faq-content">
-            <p>
-              It stands for "Intelligence Quotient". IQ is calculated using a
-              person's relative performance to their peers, this is known as
-              deviation IQ. IQ itself is based on the g-factor, which can be
-              expanded into Gf and Gc (fluid and crystallized intelligence)
-              and the Cattell-Horn-Carroll theory (although others do exist,
-              e.g, Parieto-frontal integration theory). It was once calculated
-              using IQ = MA/CA x 100, which is no longer used. This may be why
-              you see figures with absurdly high IQs, which is outdated and
-              inaccurate.
-            </p>
+  <body>
+    <nav>
+      <a href="index.html" class="logo-wrapper">
+        <img class="logo" src="assets/cognimetrics.webp" alt="Cognimetrics" />
+        <span>Cognimetrics</span>
+      </a>
+      <div class="links" id="navLinks">
+        <a href="/">Home</a>
+        <div class="dropdown">
+          Tests & Assessments
+          <div class="dropdown-content">
+            <a href="https://cognitivemetrics.co/test/AGCT">AGCT</a>
+            <div class="child-dropdown">
+              SAT
+              <div class="child-content">
+                <a href="https://cognitivemetrics.co/test/1980 SATV">Verbal</a>
+                <a href="https://cognitivemetrics.co/test/1980 SATM">Math</a>
+              </div>
+            </div>
+            <a href="https://caitiq.com">CAIT</a>
+            <div class="child-dropdown">
+              GRE
+              <div class="child-content">
+                <a href="https://cognitivemetrics.co/test/GREV">Verbal</a>
+                <a href="https://cognitivemetrics.co/test/GREQ">Quant</a>
+                <a href="https://cognitivemetrics.co/test/GREA">Analytical</a>
+              </div>
+            </div>
           </div>
-          <!-- faq-content -->
-        </li>
+        </div>
+        <a href="https://compositator.com">IQ Calculator</a>
+        <a href="faq.html">FAQ</a>
+        <a href="https://reddit.com/r/CognitiveTesting">Community</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 20px">
+        <a class="button" href="https://cognitivemetrics.co/magic-login"
+          >Login</a
+        >
+        <button class="toggle_btn" id="toggleButton">
+          <iconify-icon
+            class="icons"
+            icon="heroicons:bars-3-16-solid"
+          ></iconify-icon>
+        </button>
+      </div>
+    </nav>
 
-        <li>
-          <a class="trigger" href="#0">Is IQ = Intelligence?</a>
-          <div class="faq-content">
-            <p>
-              It is probably the best figure for measuring intelligence, but
-              the definition varies. The idea of IQ alone is appreciable in
-              its own right; measuring a FSIQ predicated off the faculty of
-              others on varied dimensions of cognitive aptitude should at
-              least be indicative of something, especially if such a figure
-              has been studied to be strongly associated to the variable
-              components in life, more than any other test for intelligence
-              that is.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-
-        <li>
-          <a class="trigger" href="#0">What is g-factor, g-loading, and reliability on IQ tests?</a>
-          <div class="faq-content">
-            <p>
-              g factor (also known as general intelligence) is the common
-              variance across a range of cognitive tasks. It is derived from
-              the Cattell-Horn Carroll Theory of intelligence which models
-              cognitive ability hierarchically, with general intelligence or g
-              at the top, broad abilities in the middle (FRI, VCI, CPI, etc.)
-              and more specific abilities under that.
-            </p>
-            <p>
-              g-loading is the degree to which a test correlates with the g
-              factor or general intelligence. A higher g loading means a test
-              is better, and figures above 0.8 are generally considered to be
-              great. g-loadings are often derived from a factor analysis. A
-              g-loading may also be squared in order to derive the variance.
-              For example, a test with a g-loading of 0.91 would mean that
-              (0.91)^2 = 82.81% of the variance between test scores is due to
-              g.
-            </p>
-            <p>
-              Reliability is the stability and consistency in the test scores,
-              so if you take tests with high reliability under the same
-              conditions then your scores are very likely to be stable.
-            </p>
-            <p>
-              <a href="https://w.wiki/8ssQ" target="_blank">Further Reading</a>
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-
-        <li>
-          <a class="trigger" href="#0">What is FSIQ?</a>
-          <div class="faq-content">
-            <p>
-              It is known as Full Scale IQ. It is the most comprehensive
-              measure of 'g' and is derived from compositing multiple subtests
-              taken. You may see another index, such as the General Ability
-              Index, where it focuses less on memory and processing speed.
-              This can be useful for people who have a lower CPI relative to
-              their other subtest scores due to autism, ADHD, etc.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-
-        <li>
-          <a class="trigger" href="#0">What is FRI, VCI, VSI, QII/QRI, WMI, PSI?</a>
-          <div class="faq-content">
-            <p>
-              Each of these indices are measures of different subsets of g, as
-              defined by the Cattel-Horn-Carrol Model of Intelligence. These
-              can be composited to calculate GAI or FSIQ. FRI stands for Fluid
-              Reasoning, VCI stands for Verbal Comprehension, VSI stands for
-              Visual Spatial, and QII stands for Quantitative Reasoning Index.
-              CPI stands for Cognitive Proficiency and usually consists of WMI
-              (Working Memory Index) and PSI (Processing Speed Index).
-            </p>
-            <p>
-              FRI is intimately related to PRI and FRI tries to measure
-              inductive concepts such as matrix reasoning. It measures the
-              underlying ability to figure out a conceptual relationship
-              amongst visual objects, and then use reasoning to identify and
-              apply rules. The FRI is typically composed of subtests such as
-              Matrix Reasoning and Figure Weights.
-            </p>
-            <p>
-              VCI measures verbal concepts such as verbal reasoning. It can
-              include both verbal knowledge and comprehension such as from
-              drawing conclusions from verbal properties.
-            </p>
-            <p>
-              VSI measures the ability to evaluate visual details as well as
-              the visual spatial relationships. The VSI could be tested from
-              things such as Block Design and Visual Puzzles.
-            </p>
-            <p>
-              QRI measures the ability to reason and solve problems which
-              involve quantitative information, such as through figuring out
-              the patterns in a problem when expressed numerically. This is
-              usually a subset of FRI.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-
-        <li>
-          <a class="trigger" href="#0">Is IQ genetic or environmental?</a>
-          <div class="faq-content">
-            <p>
-              It is mostly genetic, more than 75% of it can be attributed to
-              genetics. FSIQ in adulthood can be ≈ 85% responsible.
-              Furthermore, the differences between Verbal and Performance IQ
-              can have specific differences (e.g., a source says 85% for the
-              former and 69% for the latter). Now, environmental factors are
-              stronger in earlier years where a developing brain is more
-              volatile, but genetics will eventually be the dominating force
-              as a person ages (Wilson Effect). Additionally, differences in
-              the phenotypic IQ may come from environment, but this will often
-              come from extreme changes in environment for the negative bound
-              (e.g., extreme malnutrition/neglect).
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-
-        <li>
-          <a class="trigger" href="#0">Is it possible to improve my IQ?</a>
-          <div class="faq-content">
-            <p>
-              No, by current knowledge, it is impossible to improve 'g'. It is
-              possible to improve scores, but there will very likely be no
-              significant physiological change where you will see any vast
-              improvements in your actual IQ. IQ is more malleable when you
-              are younger where the phenotypic expression for intelligence is
-              more variable, so it is more important to ensure you have a
-              healthy environment (sleep, diet, exercise, low stress) to
-              foster your IQ to the greatest potential it could be. Obsessing
-              over it will do little to change your IQ, in fact, it will
-              probably contribute to lower scores due to a more negative
-              state. Dual-N-Back literature is also quite conflicted, and the
-              majority of professionals would reject the premise that any
-              brain training program (e.g., Lumosity) would lead to any
-              conspicuous changes. Your time is better spent working on
-              individual skills than practicing something generalized like IQ
-              and anticipating the change to be transitive inclusively for all
-              cognitive realms. It is simply better to choose a subtopic and
-              specialize in that when you are younger and more neuroplastic.
-              Additionally, most drugs are also unlikely to reflect a
-              significant change, but drugs like Cerebrolysin have been proven
-              to help mitigate cognitive damage.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-
-        <li>
-          <a class="trigger" href="#0">How does age affect my IQ? Why have my childhood IQ scores
-            changed as an adult?</a>
-          <div class="faq-content">
-            <p>
-              In general, IQ scores tend to remain relatively stable during
-              adulthood, but they can change during different life stages. For
-              instance, IQ scores tend to increase during childhood and
-              adolescence, reaching peak levels in early adulthood. As
-              individuals age beyond middle age, there might be a slight
-              decline in certain cognitive abilities that are typically
-              measured by IQ tests, such as processing speed, working memory,
-              and fluid reasoning. However, crystallized intelligence, such as
-              verbal comprehension, will continue to increase with age,
-              plateauing roughly in the mid fifties.
-            </p>
-            <p>
-              The Wilson Effect states that IQ scores during childhood years
-              tend to be unstable and are heavily influenced by environmental
-              factors. "The broad heritability of IQ is about .40 to .50 when
-              measured in children, about .60 to .70 in adolescents and young
-              adults" (Jensen 1998, 169). However, as people approach later
-              maturity, the impact of genetics takes over, reaching an
-              asymptote of ~0.80 at 18-20 years old and remaining stable going
-              forward. As age progresses, genetic influence on intelligence
-              strengthens while environmental impact diminishes and your
-              childhood scores may have been impacted by this. This may also
-              explain the "gifted kid burnout" syndrome. Just as some were the
-              tallest in their class as kids but stopped growing and are
-              average height in adulthood, those who were "gifted" as kids may
-              struggle to meet those same expectations as adults. However, the
-              inverse may also be true, comparable to growth spurts.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+    <section class="faq">
+      <ul class="categories">
+        <li><a class="selected" href="#basics">Overview</a></li>
+        <li><a href="#mobile">IQ Tests</a></li>
+        <li><a href="#account">Interpretation</a></li>
+        <li><a href="#payments">Miscellaneous</a></li>
+        <li><a href="#privacy">g-Loadings</a></li>
       </ul>
-      <!-- faq-group -->
+      <!-- categories -->
 
-      <ul id="mobile" class="faq-group">
-        <li class="faq-title">
-          <h2>IQ Tests</h2>
-        </li>
-        <li>
-          <a class="trigger" href="#0">Which is the best IQ test and predictor?</a>
-          <div class="faq-content">
-            <p>
-              See the
-              <a href="https://www.reddit.com/r/cognitiveTesting/wiki/resources" target="_blank">resources list</a>
-              for trusted tests. Unfortunately, most professional tests are
-              unavailable to take, however, there are many free tests linked
-              in the Resources above that can be just as good as most
-              professional tests.
-            </p>
-            <p>
-              The following free tests are the most recommended tests to take:
-            </p>
-            <p>
-              - The Old SAT and GRE are the most accurate measures of g but
-              will take 2/3 hours to administer.
-            </p>
-            <p>
-              - AGCT is a fast and very accurate measure of g (40 minutes).
-            </p>
-            <p>
-              - CAIT is the most comprehensive free test available and can
-              measure your Full Scale IQ (~70 minutes).
-            </p>
-            <p>
-              - JCTI is an accurate measure of fluid reasoning and recommended
-              for non-native English speakers (due to verbal not being
-              measured) and those with attention disorders (due to it being
-              untimed).
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+      <div class="faq-items">
+        <ul id="basics" class="faq-group">
+          <li class="faq-title">
+            <h2>Overview on IQ</h2>
+          </li>
+          <li>
+            <a class="trigger" href="#0">What is IQ?</a>
+            <div class="faq-content">
+              <p>
+                It stands for "Intelligence Quotient". IQ is calculated using a
+                person's relative performance to their peers, this is known as
+                deviation IQ. IQ itself is based on the g-factor, which can be
+                expanded into Gf and Gc (fluid and crystallized intelligence)
+                and the Cattell-Horn-Carroll theory (although others do exist,
+                e.g, Parieto-frontal integration theory). It was once calculated
+                using IQ = MA/CA x 100, which is no longer used. This may be why
+                you see figures with absurdly high IQs, which is outdated and
+                inaccurate.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Are online tests bad?</a>
-          <div class="faq-content">
-            <p>
-              Most online tests that can be found on Google are probably not
-              good. However, there are trustworthy tests linked in this
-              subreddit's resources tab, ranked by g-loading and other
-              factors. Online administrations of leaked professional tests,
-              such as those performed through Discord, are also accurate as
-              long as the proctor follows the manual exactly and the examinee
-              is in an optimal state, comfortable environment, and a strong
-              connection. However, diagnoses from scores should be taken with
-              a far larger grain of salt if they're by non-professionals. If
-              you took a test in real life, ask your psychologist to interpret
-              it first because they can do a better job than with our limited
-              knowledge to your situation.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-      </ul>
-      <!-- faq-group -->
+          <li>
+            <a class="trigger" href="#0">Is IQ = Intelligence?</a>
+            <div class="faq-content">
+              <p>
+                It is probably the best figure for measuring intelligence, but
+                the definition varies. The idea of IQ alone is appreciable in
+                its own right; measuring a FSIQ predicated off the faculty of
+                others on varied dimensions of cognitive aptitude should at
+                least be indicative of something, especially if such a figure
+                has been studied to be strongly associated to the variable
+                components in life, more than any other test for intelligence
+                that is.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-      <ul id="account" class="faq-group">
-        <li class="faq-title">
-          <h2>Interpretation of Scores</h2>
-        </li>
-        <li>
-          <a class="trigger" href="#0">How do I interpret my score?</a>
-          <div class="faq-content">
-            <p>
-              IQ is a measure of a person's ability comparative to everyone
-              else. The scores are usually calibrated where 100 is the mean
-              score or average. To put it in perspective, if you score 100 on
-              an IQ test, you have an average intelligence quotient. Other
-              ranges and classifications are typically around here.
-            </p>
-            <p>
-              The standard deviation, on the other hand, is a measure of
-              variability. In the case of IQ tests, the standard deviation is
-              the dispersion of IQ scores. A standard deviation of 15 means
-              68% of the population score an IQ within the interval 85-115 and
-              95% of the population scores within the interval 70-130. There
-              are three different standard deviation scales, with 15 being the
-              most popular and is associated with the Weschler tests, 16 is
-              associated with the Stanford-Binet scale, and 24 with the
-              Cattell scale. A common misconception from many is that when
-              looking at scores without knowing the SD, if the SD is in 24, it
-              would seem higher or lower than it actually is compared to an SD
-              of 15 or 16.
-            </p>
-            <p>
-              The percentile rank of a score is the percentage of scores in
-              its frequency distribution that are equal to or lower than it.
-              For example, a test score that is greater than or equal to 75%
-              of the scores of people taking the test is said to be at the
-              75th percentile rank. In order to convert an IQ score its
-              corresponding percentile, you can use a normal curve calculator,
-              such as <a href="https://w.wiki/8ssQ" target="_blank">this</a>.
-              You will always set the mean to 100 (unless the average IQ in a
-              group is different), with the standard deviation set to the
-              standard deviation of the test (Usually SD15 like the WAIS, but
-              cases vary like how the Stanford Binet uses SD16 and the Cattell
-              Culture Fair Test uses SD24), and the Standard Score "z" to the
-              score received on the test. The percentile score returned
-              represents the percent of the population you will score higher
-              than.
-            </p>
-            <table>
-              <thead>
-                <tr>
-                  <th style="text-align: left"></th>
-                  <th style="text-align: left">IQ Range</th>
-                  <th style="text-align: left">Classifaction</th>
-                  <th style="text-align: left">Rarity</th>
-                  <th style="text-align: left">How Many Exist</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">140+</td>
-                  <td style="text-align: left">Highly Advanced</td>
-                  <td style="text-align: left">1 in 261 upward</td>
-                  <td style="text-align: left">30.8m</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">130-140</td>
-                  <td style="text-align: left">
-                    Very Superior/Gifted/Very Advanced
-                  </td>
-                  <td style="text-align: left">1 in 44 to 1 in 261</td>
-                  <td style="text-align: left">159m</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">120-129</td>
-                  <td style="text-align: left">Superior/Very High</td>
-                  <td style="text-align: left">1 in 11 to 1 in 38</td>
-                  <td style="text-align: left">560m</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">110-119</td>
-                  <td style="text-align: left">High Average</td>
-                  <td style="text-align: left">1 in 4 to 1 in 10</td>
-                  <td style="text-align: left">1.292b</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">90-109</td>
-                  <td style="text-align: left">Average</td>
-                  <td style="text-align: left">1 in 4 to 1 in 4</td>
-                  <td style="text-align: left">4.03b</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">80-89</td>
-                  <td style="text-align: left">Low Average</td>
-                  <td style="text-align: left">1 in 11 to 1 in 4</td>
-                  <td style="text-align: left">1.292b</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">70-79</td>
-                  <td style="text-align: left">
-                    Borderline impaired or delayed
-                  </td>
-                  <td style="text-align: left">1 in 44 to 1 in 12</td>
-                  <td style="text-align: left">560m</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">55-69</td>
-                  <td style="text-align: left">
-                    Mildly Impaired or Delayed/Very Low
-                  </td>
-                  <td style="text-align: left">1 in 741 to 1 in 52</td>
-                  <td style="text-align: left">174m</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"></td>
-                  <td style="text-align: left">40-54</td>
-                  <td style="text-align: left">
-                    Moderately Impaired or delayed/Extremely Low
-                  </td>
-                  <td style="text-align: left">1 in 31560 to 1 in 924</td>
-                  <td style="text-align: left">10.3m​</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0"
+              >What is g-factor, g-loading, and reliability on IQ tests?</a
+            >
+            <div class="faq-content">
+              <p>
+                g factor (also known as general intelligence) is the common
+                variance across a range of cognitive tasks. It is derived from
+                the Cattell-Horn Carroll Theory of intelligence which models
+                cognitive ability hierarchically, with general intelligence or g
+                at the top, broad abilities in the middle (FRI, VCI, CPI, etc.)
+                and more specific abilities under that.
+              </p>
+              <p>
+                g-loading is the degree to which a test correlates with the g
+                factor or general intelligence. A higher g loading means a test
+                is better, and figures above 0.8 are generally considered to be
+                great. g-loadings are often derived from a factor analysis. A
+                g-loading may also be squared in order to derive the variance.
+                For example, a test with a g-loading of 0.91 would mean that
+                (0.91)^2 = 82.81% of the variance between test scores is due to
+                g.
+              </p>
+              <p>
+                Reliability is the stability and consistency in the test scores,
+                so if you take tests with high reliability under the same
+                conditions then your scores are very likely to be stable.
+              </p>
+              <p>
+                <a href="https://w.wiki/8ssQ" target="_blank"
+                  >Further Reading</a
+                >
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Why does my IQ differ between tests? Does it mean these tests are
-            invalid?</a>
-          <div class="faq-content">
-            <p>
-              No, it does not mean they are necessarily invalid, as long as it
-              is sufficiently g-loaded, the conditions you took them in are
-              not significantly disparate, and it was administered properly.
-              They are often in the same confidence interval, or you are
-              simply misinterpreting the test parameters (e.g., the standard
-              deviation). Your IQ scores may differ based on the effects of
-              age as well, explained above in the FAQ. Another reason why they
-              may differ is that they are measuring different subsets of 'g'.
-              For example, someone with strengths in VCI and weaknesses in PRI
-              may score higher on verbal tests and lower in matrix reasoning
-              tests. Depending on the types of tests you have taken, you can
-              use the
-              <a href="https://compositator.com/" target="_blank">Compositator</a>
-              to get a comprehensive overview of your intelligence.
-              Additionally, you can simply take an arithmetic or weighted
-              average based on your scores.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0">What is FSIQ?</a>
+            <div class="faq-content">
+              <p>
+                It is known as Full Scale IQ. It is the most comprehensive
+                measure of 'g' and is derived from compositing multiple subtests
+                taken. You may see another index, such as the General Ability
+                Index, where it focuses less on memory and processing speed.
+                This can be useful for people who have a lower CPI relative to
+                their other subtest scores due to autism, ADHD, etc.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">I am not a native English speaker, are my verbal/VCI scores
-            invalid?</a>
-          <div class="faq-content">
-            <p>
-              Yes, they will usually be invalid. The g-loadings VCI tests are
-              calculated and normed on native English speakers and will
-              therefore not be accurate for non-natives. Unfortunately, due to
-              the cultural nature of VCI tests, it is impossible to have a
-              test that can accurately measure VCI for everyone. This isn't
-              the case for other areas (e.g., FRI), where if directions are
-              properly given, then the case is negligible.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0"
+              >What is FRI, VCI, VSI, QII/QRI, WMI, PSI?</a
+            >
+            <div class="faq-content">
+              <p>
+                Each of these indices are measures of different subsets of g, as
+                defined by the Cattel-Horn-Carrol Model of Intelligence. These
+                can be composited to calculate GAI or FSIQ. FRI stands for Fluid
+                Reasoning, VCI stands for Verbal Comprehension, VSI stands for
+                Visual Spatial, and QII stands for Quantitative Reasoning Index.
+                CPI stands for Cognitive Proficiency and usually consists of WMI
+                (Working Memory Index) and PSI (Processing Speed Index).
+              </p>
+              <p>
+                FRI is intimately related to PRI and FRI tries to measure
+                inductive concepts such as matrix reasoning. It measures the
+                underlying ability to figure out a conceptual relationship
+                amongst visual objects, and then use reasoning to identify and
+                apply rules. The FRI is typically composed of subtests such as
+                Matrix Reasoning and Figure Weights.
+              </p>
+              <p>
+                VCI measures verbal concepts such as verbal reasoning. It can
+                include both verbal knowledge and comprehension such as from
+                drawing conclusions from verbal properties.
+              </p>
+              <p>
+                VSI measures the ability to evaluate visual details as well as
+                the visual spatial relationships. The VSI could be tested from
+                things such as Block Design and Visual Puzzles.
+              </p>
+              <p>
+                QRI measures the ability to reason and solve problems which
+                involve quantitative information, such as through figuring out
+                the patterns in a problem when expressed numerically. This is
+                usually a subset of FRI.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Why is my WMI and/or CPI so low? Does having
-            ADHD/OCD/Depression/etc. affect my IQ?</a>
-          <div class="faq-content">
-            <p>
-              It may be indicative of a neurobehavioral disorder, such as ADHD
-              or ADD. There is no way to tell for sure, so professional input
-              is greatly valued. Most studies indicate that ADHD itself does
-              not lower IQ, but it will impact your cognitive function.
-              Additionally, there is currently no direct evidence suggesting
-              OCD impacts IQ, but the interference itself with cognitive
-              function will affect performance on tasks requiring attention.
-              Depression on the other hand has been proven to affect cognitive
-              function in CPI related areas, such as memory and an overall
-              permeating effect on executive function, but to quantify exactly
-              how much it affects a score is a pointless endeavor.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0">Is IQ genetic or environmental?</a>
+            <div class="faq-content">
+              <p>
+                It is mostly genetic, more than 75% of it can be attributed to
+                genetics. FSIQ in adulthood can be ≈ 85% responsible.
+                Furthermore, the differences between Verbal and Performance IQ
+                can have specific differences (e.g., a source says 85% for the
+                former and 69% for the latter). Now, environmental factors are
+                stronger in earlier years where a developing brain is more
+                volatile, but genetics will eventually be the dominating force
+                as a person ages (Wilson Effect). Additionally, differences in
+                the phenotypic IQ may come from environment, but this will often
+                come from extreme changes in environment for the negative bound
+                (e.g., extreme malnutrition/neglect).
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Is my IQ high enough for X?</a>
-          <div class="faq-content">
-            <p>
-              Practically speaking, you should not let IQ discourage you too
-              much from embarking on anything. However, it is true that IQ is
-              indeed well correlated to certain occupations, and the effects
-              do not necessarily plateau as you go higher. However, as a
-              general rule, an IQ of 115 and above should suffice for most
-              things, though if you go lower, one may expect more time
-              invested in the fields. An IQ past the high 130s will not yield
-              any considerable benefit for the majority of people. It is,
-              however, still important for those in hyper-competitive areas,
-              and there aren't any diminishing returns for those pursuing
-              high-tier vocational levels, it is rather still advantageous.
-              Regardless, the studies still consider the multidimensional
-              aspects of this, considering other lifestyle factors as well.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0">Is it possible to improve my IQ?</a>
+            <div class="faq-content">
+              <p>
+                No, by current knowledge, it is impossible to improve 'g'. It is
+                possible to improve scores, but there will very likely be no
+                significant physiological change where you will see any vast
+                improvements in your actual IQ. IQ is more malleable when you
+                are younger where the phenotypic expression for intelligence is
+                more variable, so it is more important to ensure you have a
+                healthy environment (sleep, diet, exercise, low stress) to
+                foster your IQ to the greatest potential it could be. Obsessing
+                over it will do little to change your IQ, in fact, it will
+                probably contribute to lower scores due to a more negative
+                state. Dual-N-Back literature is also quite conflicted, and the
+                majority of professionals would reject the premise that any
+                brain training program (e.g., Lumosity) would lead to any
+                conspicuous changes. Your time is better spent working on
+                individual skills than practicing something generalized like IQ
+                and anticipating the change to be transitive inclusively for all
+                cognitive realms. It is simply better to choose a subtopic and
+                specialize in that when you are younger and more neuroplastic.
+                Additionally, most drugs are also unlikely to reflect a
+                significant change, but drugs like Cerebrolysin have been proven
+                to help mitigate cognitive damage.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">How can I estimate my FSIQ?</a>
-          <div class="faq-content">
-            <p>
-              You can take a variety of highly g-loaded tests, such as the old
-              SAT, old GRE, or AGCT (of course the WAIS-IV and SBV are also
-              great, but most people don't have access to them) and calculate
-              your FSIQ. If your scores vary often amongst good tests (which
-              they shouldn't too much), then you can either take a range of
-              the scores or take a weighted average of them based on
-              g-loading, or sometimes a simple arithmetic average may even
-              suffice if all the tests are good, and a g-loading is not known.
-            </p>
-            <p>
-              If you know do the g-loading or correlation (they are
-              interchangeable here) to a highly g-loaded test, then you can
-              use the Big 'g' Estimator, available
-              <a href="https://compositator.com/" target="_blank">here</a>.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-      </ul>
-      <!-- faq-group -->
+          <li>
+            <a class="trigger" href="#0"
+              >How does age affect my IQ? Why have my childhood IQ scores
+              changed as an adult?</a
+            >
+            <div class="faq-content">
+              <p>
+                In general, IQ scores tend to remain relatively stable during
+                adulthood, but they can change during different life stages. For
+                instance, IQ scores tend to increase during childhood and
+                adolescence, reaching peak levels in early adulthood. As
+                individuals age beyond middle age, there might be a slight
+                decline in certain cognitive abilities that are typically
+                measured by IQ tests, such as processing speed, working memory,
+                and fluid reasoning. However, crystallized intelligence, such as
+                verbal comprehension, will continue to increase with age,
+                plateauing roughly in the mid fifties.
+              </p>
+              <p>
+                The Wilson Effect states that IQ scores during childhood years
+                tend to be unstable and are heavily influenced by environmental
+                factors. "The broad heritability of IQ is about .40 to .50 when
+                measured in children, about .60 to .70 in adolescents and young
+                adults" (Jensen 1998, 169). However, as people approach later
+                maturity, the impact of genetics takes over, reaching an
+                asymptote of ~0.80 at 18-20 years old and remaining stable going
+                forward. As age progresses, genetic influence on intelligence
+                strengthens while environmental impact diminishes and your
+                childhood scores may have been impacted by this. This may also
+                explain the "gifted kid burnout" syndrome. Just as some were the
+                tallest in their class as kids but stopped growing and are
+                average height in adulthood, those who were "gifted" as kids may
+                struggle to meet those same expectations as adults. However, the
+                inverse may also be true, comparable to growth spurts.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+        </ul>
+        <!-- faq-group -->
 
-      <ul id="payments" class="faq-group">
-        <li class="faq-title">
-          <h2>Miscellaneous But Still Common Questions</h2>
-        </li>
-        <li>
-          <a class="trigger" href="#0">Is practice effect real?</a>
-          <div class="faq-content">
-            <p>
-              Yes. It is important to consider practice effect yields do not
-              correlate to any gains on 'g', as stated earlier. Some tests and
-              item types are impacted by practice effect more than others.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+        <ul id="mobile" class="faq-group">
+          <li class="faq-title">
+            <h2>IQ Tests</h2>
+          </li>
+          <li>
+            <a class="trigger" href="#0"
+              >Which is the best IQ test and predictor?</a
+            >
+            <div class="faq-content">
+              <p>
+                See the
+                <a
+                  href="https://www.reddit.com/r/cognitiveTesting/wiki/resources"
+                  target="_blank"
+                  >resources list</a
+                >
+                for trusted tests. Unfortunately, most professional tests are
+                unavailable to take, however, there are many free tests linked
+                in the Resources above that can be just as good as most
+                professional tests.
+              </p>
+              <p>
+                The following free tests are the most recommended tests to take:
+              </p>
+              <p>
+                - The Old SAT and GRE are the most accurate measures of g but
+                will take 2/3 hours to administer.
+              </p>
+              <p>
+                - AGCT is a fast and very accurate measure of g (40 minutes).
+              </p>
+              <p>
+                - CAIT is the most comprehensive free test available and can
+                measure your Full Scale IQ (~70 minutes).
+              </p>
+              <p>
+                - JCTI is an accurate measure of fluid reasoning and recommended
+                for non-native English speakers (due to verbal not being
+                measured) and those with attention disorders (due to it being
+                untimed).
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Can I recover myself cognitively after trauma or prevent
-            degradation?</a>
-          <div class="faq-content">
-            <p>
-              Yes, the brain will always try to return to a baseline naturally
-              after a form of serious trauma (for example, it has been proven
-              that traumatic brain injuries can stimulate neurogenesis which
-              leads to the proliferation of neural stem cells and
-              synaptogenesis). Any form of exercise, such as aerobic and
-              anaerobic are beneficial as they bring oxygen and blood to the
-              brain (both together are best). Additionally, being and staying
-              stimulated on skills you wish to excel in will help you by dint
-              of synaptic pruning. The younger you are, the more likely you
-              are to recover since you are more neuroplastic (for example,
-              look at hemispherectomy recovery rates comparative to different
-              ages). Getting proper sleep, will help with preventing the onset
-              of neurodegenerative diseases such as Alzheimer's as
-              cerebrospinal fluid will clear away metabolic waste (along with
-              many other benefits as you sleep). Additionally, a good diet
-              that is low in excessive fats is also good, along with a diet
-              meeting recommended nutritional goals (Mediterranean diet is a
-              good start). Staying stimulated and cognitively challenging
-              yourself is also good. Social interaction has also been proven
-              to help. To keep it short, diet, exercise, and sleep are the
-              best for maintaining peak cognitive function and staving off
-              neurodegeneration.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0">Are online tests bad?</a>
+            <div class="faq-content">
+              <p>
+                Most online tests that can be found on Google are probably not
+                good. However, there are trustworthy tests linked in this
+                subreddit's resources tab, ranked by g-loading and other
+                factors. Online administrations of leaked professional tests,
+                such as those performed through Discord, are also accurate as
+                long as the proctor follows the manual exactly and the examinee
+                is in an optimal state, comfortable environment, and a strong
+                connection. However, diagnoses from scores should be taken with
+                a far larger grain of salt if they're by non-professionals. If
+                you took a test in real life, ask your psychologist to interpret
+                it first because they can do a better job than with our limited
+                knowledge to your situation.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+        </ul>
+        <!-- faq-group -->
 
-        <li>
-          <a class="trigger" href="#0">Are there ways to measure intelligence without IQ tests?</a>
-          <div class="faq-content">
-            <p>
-              Genome-Wide Association Studies (aka GWAS) analysis can
-              sometimes be quite accurate, and they work by identifying DNA
-              variants that contribute to the variance in intelligence. Due to
-              the strong genetic nature in IQ, GWAS can identify man
-              single-nucleotide polymorphisms (SNPs) which have an effect on
-              intelligence. The studies so far use a polygenic score which can
-              be used to see how predictive it is of IQ. However, some studies
-              find that Polygenic scores of intelligence can predict only
-              around 4 to 10.6% of the variance in intelligence, so it isn't
-              perfect.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+        <ul id="account" class="faq-group">
+          <li class="faq-title">
+            <h2>Interpretation of Scores</h2>
+          </li>
+          <li>
+            <a class="trigger" href="#0">How do I interpret my score?</a>
+            <div class="faq-content">
+              <p>
+                IQ is a measure of a person's ability comparative to everyone
+                else. The scores are usually calibrated where 100 is the mean
+                score or average. To put it in perspective, if you score 100 on
+                an IQ test, you have an average intelligence quotient. Other
+                ranges and classifications are typically around here.
+              </p>
+              <p>
+                The standard deviation, on the other hand, is a measure of
+                variability. In the case of IQ tests, the standard deviation is
+                the dispersion of IQ scores. A standard deviation of 15 means
+                68% of the population score an IQ within the interval 85-115 and
+                95% of the population scores within the interval 70-130. There
+                are three different standard deviation scales, with 15 being the
+                most popular and is associated with the Weschler tests, 16 is
+                associated with the Stanford-Binet scale, and 24 with the
+                Cattell scale. A common misconception from many is that when
+                looking at scores without knowing the SD, if the SD is in 24, it
+                would seem higher or lower than it actually is compared to an SD
+                of 15 or 16.
+              </p>
+              <p>
+                The percentile rank of a score is the percentage of scores in
+                its frequency distribution that are equal to or lower than it.
+                For example, a test score that is greater than or equal to 75%
+                of the scores of people taking the test is said to be at the
+                75th percentile rank. In order to convert an IQ score its
+                corresponding percentile, you can use a normal curve calculator,
+                such as <a href="https://w.wiki/8ssQ" target="_blank">this</a>.
+                You will always set the mean to 100 (unless the average IQ in a
+                group is different), with the standard deviation set to the
+                standard deviation of the test (Usually SD15 like the WAIS, but
+                cases vary like how the Stanford Binet uses SD16 and the Cattell
+                Culture Fair Test uses SD24), and the Standard Score "z" to the
+                score received on the test. The percentile score returned
+                represents the percent of the population you will score higher
+                than.
+              </p>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align: left"></th>
+                    <th style="text-align: left">IQ Range</th>
+                    <th style="text-align: left">Classifaction</th>
+                    <th style="text-align: left">Rarity</th>
+                    <th style="text-align: left">How Many Exist</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">140+</td>
+                    <td style="text-align: left">Highly Advanced</td>
+                    <td style="text-align: left">1 in 261 upward</td>
+                    <td style="text-align: left">30.8m</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">130-140</td>
+                    <td style="text-align: left">
+                      Very Superior/Gifted/Very Advanced
+                    </td>
+                    <td style="text-align: left">1 in 44 to 1 in 261</td>
+                    <td style="text-align: left">159m</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">120-129</td>
+                    <td style="text-align: left">Superior/Very High</td>
+                    <td style="text-align: left">1 in 11 to 1 in 38</td>
+                    <td style="text-align: left">560m</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">110-119</td>
+                    <td style="text-align: left">High Average</td>
+                    <td style="text-align: left">1 in 4 to 1 in 10</td>
+                    <td style="text-align: left">1.292b</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">90-109</td>
+                    <td style="text-align: left">Average</td>
+                    <td style="text-align: left">1 in 4 to 1 in 4</td>
+                    <td style="text-align: left">4.03b</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">80-89</td>
+                    <td style="text-align: left">Low Average</td>
+                    <td style="text-align: left">1 in 11 to 1 in 4</td>
+                    <td style="text-align: left">1.292b</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">70-79</td>
+                    <td style="text-align: left">
+                      Borderline impaired or delayed
+                    </td>
+                    <td style="text-align: left">1 in 44 to 1 in 12</td>
+                    <td style="text-align: left">560m</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">55-69</td>
+                    <td style="text-align: left">
+                      Mildly Impaired or Delayed/Very Low
+                    </td>
+                    <td style="text-align: left">1 in 741 to 1 in 52</td>
+                    <td style="text-align: left">174m</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"></td>
+                    <td style="text-align: left">40-54</td>
+                    <td style="text-align: left">
+                      Moderately Impaired or delayed/Extremely Low
+                    </td>
+                    <td style="text-align: left">1 in 31560 to 1 in 924</td>
+                    <td style="text-align: left">10.3m​</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Is MBTI accurate?</a>
-          <div class="faq-content">
-            <p>
-              This is an interesting question considering MBTI has been tested
-              or inquired about in many scientific articles. The consensus is
-              that MBTI itself lacks scientific rigor and exists purely as a
-              commercial vessel, but that does not mean the score you get
-              cannot be reliable nor accurate if MBTI were to adhere to strict
-              definitions and scoring is dependent on a sample size and
-              calibration of results. Another alternative would be the Big-5
-              which is perceived more positively than MBTI in academia.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0"
+              >Why does my IQ differ between tests? Does it mean these tests are
+              invalid?</a
+            >
+            <div class="faq-content">
+              <p>
+                No, it does not mean they are necessarily invalid, as long as it
+                is sufficiently g-loaded, the conditions you took them in are
+                not significantly disparate, and it was administered properly.
+                They are often in the same confidence interval, or you are
+                simply misinterpreting the test parameters (e.g., the standard
+                deviation). Your IQ scores may differ based on the effects of
+                age as well, explained above in the FAQ. Another reason why they
+                may differ is that they are measuring different subsets of 'g'.
+                For example, someone with strengths in VCI and weaknesses in PRI
+                may score higher on verbal tests and lower in matrix reasoning
+                tests. Depending on the types of tests you have taken, you can
+                use the
+                <a href="https://compositator.com/" target="_blank"
+                  >Compositator</a
+                >
+                to get a comprehensive overview of your intelligence.
+                Additionally, you can simply take an arithmetic or weighted
+                average based on your scores.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Is chess correlated to IQ?</a>
-          <div class="faq-content">
-            <p>
-              No, not strongly that is. Fluency in chess is more indicative of
-              training and taking advantage of the greater neuroplasticity and
-              synaptic pruning one has in their younger years, although
-              working memory and processing speed are likely to be the
-              strongest factors related to high performance in chess (e.g.,
-              see the Polgars). Moreover, chess players such as Kasparov and
-              Judit Polgar have both been testesd, and Kasparov scored the
-              highest at 135 when he was tested by a magazine that employed
-              psychologists. The strongest correlation is likely CPI compared
-              to the rest.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0"
+              >I am not a native English speaker, are my verbal/VCI scores
+              invalid?</a
+            >
+            <div class="faq-content">
+              <p>
+                Yes, they will usually be invalid. The g-loadings VCI tests are
+                calculated and normed on native English speakers and will
+                therefore not be accurate for non-natives. Unfortunately, due to
+                the cultural nature of VCI tests, it is impossible to have a
+                test that can accurately measure VCI for everyone. This isn't
+                the case for other areas (e.g., FRI), where if directions are
+                properly given, then the case is negligible.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">Was Richard Feynman 125 IQ?</a>
-          <div class="faq-content">
-            <p>
-              Most likely not, but it is impossible to say for certain. The
-              test in which Feynman scored 125 on was as an adolescent in high
-              school, meaning his scores are not representative of his
-              capabilities as an adult. We also cannot determine whether or
-              not the test was a verbal test or a full-scale test, though it
-              is heavily speculated it was a verbal test, meaning measurements
-              of Feynman's strong fluid reasoning skills were likely
-              neglected. “According to his biographer, in high school the
-              brilliant mathematician Richard Feynman's score on the school's
-              IQ test was a ‘merely respectable 125’ (Gleick, 1992, p. 30). It
-              was probably a paper-and-pencil test that had a ceiling, and an
-              IQ of 125 under these circumstances is hardly to be shrugged
-              off, because it is about 1.6 standard deviations above the mean
-              of 100. The general experience of psychologists in applying
-              tests would lead them to expect that Feynman would have made a
-              much higher IQ if he had been properly tested.” John Carroll
-              (1996), The Nature of Mathematical Thinking (pg. 9). His IQ is
-              most likely much higher than 125, but it's impossible to know by
-              how much due to lack of information.
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-      </ul>
-      <!-- faq-group -->
+          <li>
+            <a class="trigger" href="#0"
+              >Why is my WMI and/or CPI so low? Does having
+              ADHD/OCD/Depression/etc. affect my IQ?</a
+            >
+            <div class="faq-content">
+              <p>
+                It may be indicative of a neurobehavioral disorder, such as ADHD
+                or ADD. There is no way to tell for sure, so professional input
+                is greatly valued. Most studies indicate that ADHD itself does
+                not lower IQ, but it will impact your cognitive function.
+                Additionally, there is currently no direct evidence suggesting
+                OCD impacts IQ, but the interference itself with cognitive
+                function will affect performance on tasks requiring attention.
+                Depression on the other hand has been proven to affect cognitive
+                function in CPI related areas, such as memory and an overall
+                permeating effect on executive function, but to quantify exactly
+                how much it affects a score is a pointless endeavor.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-      <ul id="privacy" class="faq-group">
-        <li class="faq-title">
-          <h2>g-Loadings of Various Psychometric Instruments</h2>
-        </li>
-        <li>
-          <a class="trigger" href="#0">Which are some of the most g-loaded tests?</a>
-          <div class="faq-content">
-            <p>
-              These figures were calculated using the values in their
-              respective manuals and studies.
-            </p>
-            <table>
-              <thead>
-                <tr>
-                  <th style="text-align: left">Test</th>
-                  <th style="text-align: right"><em>g-loading</em></th>
-                  <th style="text-align: center">Date Published</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align: left">SB-V</td>
-                  <td style="text-align: right">0.96</td>
-                  <td style="text-align: center">2003</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WAIS</td>
-                  <td style="text-align: right">0.94</td>
-                  <td style="text-align: center">1955</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WAIS-III</td>
-                  <td style="text-align: right">0.93</td>
-                  <td style="text-align: center">1997</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">SB-IV</td>
-                  <td style="text-align: right">0.93</td>
-                  <td style="text-align: center">1986</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">SAT</td>
-                  <td style="text-align: right">0.93</td>
-                  <td style="text-align: center">1974-1994</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">GRE</td>
-                  <td style="text-align: right">0.92</td>
-                  <td style="text-align: center">1981-2001</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WAIS-IV</td>
-                  <td style="text-align: right">0.92</td>
-                  <td style="text-align: center">2008</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WJ-IV COG</td>
-                  <td style="text-align: right">0.91</td>
-                  <td style="text-align: center">2014</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">AGCT</td>
-                  <td style="text-align: right">0.91</td>
-                  <td style="text-align: center">1941</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WISC-V</td>
-                  <td style="text-align: right">0.90</td>
-                  <td style="text-align: center">2014</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WISC-IV</td>
-                  <td style="text-align: right">0.90</td>
-                  <td style="text-align: center">2003</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WAIS-R</td>
-                  <td style="text-align: right">0.90</td>
-                  <td style="text-align: center">1981</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WISC-III</td>
-                  <td style="text-align: right">0.90</td>
-                  <td style="text-align: center">1991</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WB</td>
-                  <td style="text-align: right">0.90</td>
-                  <td style="text-align: center">1951</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">WASI-II</td>
-                  <td style="text-align: right">0.86</td>
-                  <td style="text-align: center">2011</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">RIAS</td>
-                  <td style="text-align: right">0.86</td>
-                  <td style="text-align: center">2003</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- faq-content -->
-        </li>
+          <li>
+            <a class="trigger" href="#0">Is my IQ high enough for X?</a>
+            <div class="faq-content">
+              <p>
+                Practically speaking, you should not let IQ discourage you too
+                much from embarking on anything. However, it is true that IQ is
+                indeed well correlated to certain occupations, and the effects
+                do not necessarily plateau as you go higher. However, as a
+                general rule, an IQ of 115 and above should suffice for most
+                things, though if you go lower, one may expect more time
+                invested in the fields. An IQ past the high 130s will not yield
+                any considerable benefit for the majority of people. It is,
+                however, still important for those in hyper-competitive areas,
+                and there aren't any diminishing returns for those pursuing
+                high-tier vocational levels, it is rather still advantageous.
+                Regardless, the studies still consider the multidimensional
+                aspects of this, considering other lifestyle factors as well.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
-        <li>
-          <a class="trigger" href="#0">What could be some of the g-loadings for online tests?</a>
-          <div class="faq-content">
-            <p>These were calculated using values from IQExams.</p>
-            <table>
-              <thead>
-                <tr>
-                  <th style="text-align: left">Test</th>
-                  <th style="text-align: right"><em>g-loading</em></th>
-                  <th style="text-align: center">ωₕ</th>
-                  <th style="text-align: center">α</th>
-                  <th style="text-align: center">n at time of analysis</th>
-                  <th style="text-align: center">Type</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align: left">HumanIQ^</td>
-                  <td style="text-align: right">0.747</td>
-                  <td style="text-align: center">0.680</td>
-                  <td style="text-align: center">0.863</td>
-                  <td style="text-align: center">2,543</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">High Range RT^</td>
-                  <td style="text-align: right">0.738</td>
-                  <td style="text-align: center">0.664</td>
-                  <td style="text-align: center">0.842</td>
-                  <td style="text-align: center">458</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Tero41^</td>
-                  <td style="text-align: right">0.733</td>
-                  <td style="text-align: center">0.655</td>
-                  <td style="text-align: center">0.869</td>
-                  <td style="text-align: center">1,172</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">LDSE^</td>
-                  <td style="text-align: right">0.724</td>
-                  <td style="text-align: center">0.638</td>
-                  <td style="text-align: center">0.925</td>
-                  <td style="text-align: center">166</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Logica Stella</td>
-                  <td style="text-align: right">0.719</td>
-                  <td style="text-align: center">0.630</td>
-                  <td style="text-align: center">0.858</td>
-                  <td style="text-align: center">1,492</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Astrolab36</td>
-                  <td style="text-align: right">0.715</td>
-                  <td style="text-align: center">0.624</td>
-                  <td style="text-align: center">0.861</td>
-                  <td style="text-align: center">372</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Octagon</td>
-                  <td style="text-align: right">0.711</td>
-                  <td style="text-align: center">0.616</td>
-                  <td style="text-align: center">0.877</td>
-                  <td style="text-align: center">393</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Processor40^</td>
-                  <td style="text-align: right">0.689</td>
-                  <td style="text-align: center">0.578</td>
-                  <td style="text-align: center">0.882</td>
-                  <td style="text-align: center">500</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Matrix3x3</td>
-                  <td style="text-align: right">0.681</td>
-                  <td style="text-align: center">0.565</td>
-                  <td style="text-align: center">0.907</td>
-                  <td style="text-align: center">333</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Fuse</td>
-                  <td style="text-align: right">0.678</td>
-                  <td style="text-align: center">0.559</td>
-                  <td style="text-align: center">0.823</td>
-                  <td style="text-align: center">372</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Level</td>
-                  <td style="text-align: right">0.674</td>
-                  <td style="text-align: center">0.554</td>
-                  <td style="text-align: center">0.779</td>
-                  <td style="text-align: center">362</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Backspace</td>
-                  <td style="text-align: right">0.657</td>
-                  <td style="text-align: center">0.526</td>
-                  <td style="text-align: center">0.842</td>
-                  <td style="text-align: center">239</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">HoudinIQ^</td>
-                  <td style="text-align: right">0.651</td>
-                  <td style="text-align: center">0.517</td>
-                  <td style="text-align: center">0.797</td>
-                  <td style="text-align: center">432</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">ArithmetIQ</td>
-                  <td style="text-align: right">0.630</td>
-                  <td style="text-align: center">0.498</td>
-                  <td style="text-align: center">0.799</td>
-                  <td style="text-align: center">471</td>
-                  <td style="text-align: center">Numerical</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">EvolutionaryTS^</td>
-                  <td style="text-align: right">0.603</td>
-                  <td style="text-align: center">0.443</td>
-                  <td style="text-align: center">0.752</td>
-                  <td style="text-align: center">245</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Momentum</td>
-                  <td style="text-align: right">0.603</td>
-                  <td style="text-align: center">0.442</td>
-                  <td style="text-align: center">0.733</td>
-                  <td style="text-align: center">876</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">PINOT40^</td>
-                  <td style="text-align: right">0.599</td>
-                  <td style="text-align: center">0.450</td>
-                  <td style="text-align: center">0.754</td>
-                  <td style="text-align: center">271</td>
-                  <td style="text-align: center">Numerical</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">PMA32E^</td>
-                  <td style="text-align: right">0.581</td>
-                  <td style="text-align: center">0.411</td>
-                  <td style="text-align: center">0.666</td>
-                  <td style="text-align: center">1,333</td>
-                  <td style="text-align: center">Spatial</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Spat Analogies^</td>
-                  <td style="text-align: right">0.578</td>
-                  <td style="text-align: center">0.407</td>
-                  <td style="text-align: center">0.735</td>
-                  <td style="text-align: center">512</td>
-                  <td style="text-align: center">Verbal</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">Analogix</td>
-                  <td style="text-align: right">0.390</td>
-                  <td style="text-align: center">0.209</td>
-                  <td style="text-align: center">0.650</td>
-                  <td style="text-align: center">289</td>
-                  <td style="text-align: center">Verbal</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left"><strong>Average</strong></td>
-                  <td style="text-align: right">0.675</td>
-                  <td style="text-align: center">0.563</td>
-                  <td style="text-align: center">0.813</td>
-                  <td style="text-align: center">12,831</td>
-                  <td style="text-align: center">N/A</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>
-              ^ means the distribution may not be normal, so interpret the
-              values with caution.
-            </p>
-            <p>
-              <em>Results for all tests and tiers were calculated around
-                1/08/2022 to 4/18/2022 and are subject to being altered if
-                more data is provided (likely not)</em>
-            </p>
-          </div>
-          <!-- faq-content -->
-        </li>
-      </ul>
-      <!-- faq-group -->
-    </div>
-    <!-- faq-items -->
-    <a href="#0" class="cd-close-panel">Close</a>
-  </section>
-  <!-- faq -->
+          <li>
+            <a class="trigger" href="#0">How can I estimate my FSIQ?</a>
+            <div class="faq-content">
+              <p>
+                You can take a variety of highly g-loaded tests, such as the old
+                SAT, old GRE, or AGCT (of course the WAIS-IV and SBV are also
+                great, but most people don't have access to them) and calculate
+                your FSIQ. If your scores vary often amongst good tests (which
+                they shouldn't too much), then you can either take a range of
+                the scores or take a weighted average of them based on
+                g-loading, or sometimes a simple arithmetic average may even
+                suffice if all the tests are good, and a g-loading is not known.
+              </p>
+              <p>
+                If you know do the g-loading or correlation (they are
+                interchangeable here) to a highly g-loaded test, then you can
+                use the Big 'g' Estimator, available
+                <a href="https://compositator.com/" target="_blank">here</a>.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+        </ul>
+        <!-- faq-group -->
 
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="assets/js/scripts.js"></script>
-</body>
+        <ul id="payments" class="faq-group">
+          <li class="faq-title">
+            <h2>Miscellaneous But Still Common Questions</h2>
+          </li>
+          <li>
+            <a class="trigger" href="#0">Is practice effect real?</a>
+            <div class="faq-content">
+              <p>
+                Yes. It is important to consider practice effect yields do not
+                correlate to any gains on 'g', as stated earlier. Some tests and
+                item types are impacted by practice effect more than others.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
 
+          <li>
+            <a class="trigger" href="#0"
+              >Can I recover myself cognitively after trauma or prevent
+              degradation?</a
+            >
+            <div class="faq-content">
+              <p>
+                Yes, the brain will always try to return to a baseline naturally
+                after a form of serious trauma (for example, it has been proven
+                that traumatic brain injuries can stimulate neurogenesis which
+                leads to the proliferation of neural stem cells and
+                synaptogenesis). Any form of exercise, such as aerobic and
+                anaerobic are beneficial as they bring oxygen and blood to the
+                brain (both together are best). Additionally, being and staying
+                stimulated on skills you wish to excel in will help you by dint
+                of synaptic pruning. The younger you are, the more likely you
+                are to recover since you are more neuroplastic (for example,
+                look at hemispherectomy recovery rates comparative to different
+                ages). Getting proper sleep, will help with preventing the onset
+                of neurodegenerative diseases such as Alzheimer's as
+                cerebrospinal fluid will clear away metabolic waste (along with
+                many other benefits as you sleep). Additionally, a good diet
+                that is low in excessive fats is also good, along with a diet
+                meeting recommended nutritional goals (Mediterranean diet is a
+                good start). Staying stimulated and cognitively challenging
+                yourself is also good. Social interaction has also been proven
+                to help. To keep it short, diet, exercise, and sleep are the
+                best for maintaining peak cognitive function and staving off
+                neurodegeneration.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+
+          <li>
+            <a class="trigger" href="#0"
+              >Are there ways to measure intelligence without IQ tests?</a
+            >
+            <div class="faq-content">
+              <p>
+                Genome-Wide Association Studies (aka GWAS) analysis can
+                sometimes be quite accurate, and they work by identifying DNA
+                variants that contribute to the variance in intelligence. Due to
+                the strong genetic nature in IQ, GWAS can identify man
+                single-nucleotide polymorphisms (SNPs) which have an effect on
+                intelligence. The studies so far use a polygenic score which can
+                be used to see how predictive it is of IQ. However, some studies
+                find that Polygenic scores of intelligence can predict only
+                around 4 to 10.6% of the variance in intelligence, so it isn't
+                perfect.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+
+          <li>
+            <a class="trigger" href="#0">Is MBTI accurate?</a>
+            <div class="faq-content">
+              <p>
+                This is an interesting question considering MBTI has been tested
+                or inquired about in many scientific articles. The consensus is
+                that MBTI itself lacks scientific rigor and exists purely as a
+                commercial vessel, but that does not mean the score you get
+                cannot be reliable nor accurate if MBTI were to adhere to strict
+                definitions and scoring is dependent on a sample size and
+                calibration of results. Another alternative would be the Big-5
+                which is perceived more positively than MBTI in academia.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+
+          <li>
+            <a class="trigger" href="#0">Is chess correlated to IQ?</a>
+            <div class="faq-content">
+              <p>
+                No, not strongly that is. Fluency in chess is more indicative of
+                training and taking advantage of the greater neuroplasticity and
+                synaptic pruning one has in their younger years, although
+                working memory and processing speed are likely to be the
+                strongest factors related to high performance in chess (e.g.,
+                see the Polgars). Moreover, chess players such as Kasparov and
+                Judit Polgar have both been testesd, and Kasparov scored the
+                highest at 135 when he was tested by a magazine that employed
+                psychologists. The strongest correlation is likely CPI compared
+                to the rest.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+
+          <li>
+            <a class="trigger" href="#0">Was Richard Feynman 125 IQ?</a>
+            <div class="faq-content">
+              <p>
+                Most likely not, but it is impossible to say for certain. The
+                test in which Feynman scored 125 on was as an adolescent in high
+                school, meaning his scores are not representative of his
+                capabilities as an adult. We also cannot determine whether or
+                not the test was a verbal test or a full-scale test, though it
+                is heavily speculated it was a verbal test, meaning measurements
+                of Feynman's strong fluid reasoning skills were likely
+                neglected. “According to his biographer, in high school the
+                brilliant mathematician Richard Feynman's score on the school's
+                IQ test was a ‘merely respectable 125’ (Gleick, 1992, p. 30). It
+                was probably a paper-and-pencil test that had a ceiling, and an
+                IQ of 125 under these circumstances is hardly to be shrugged
+                off, because it is about 1.6 standard deviations above the mean
+                of 100. The general experience of psychologists in applying
+                tests would lead them to expect that Feynman would have made a
+                much higher IQ if he had been properly tested.” John Carroll
+                (1996), The Nature of Mathematical Thinking (pg. 9). His IQ is
+                most likely much higher than 125, but it's impossible to know by
+                how much due to lack of information.
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+        </ul>
+        <!-- faq-group -->
+
+        <ul id="privacy" class="faq-group">
+          <li class="faq-title">
+            <h2>g-Loadings of Various Psychometric Instruments</h2>
+          </li>
+          <li>
+            <a class="trigger" href="#0"
+              >Which are some of the most g-loaded tests?</a
+            >
+            <div class="faq-content">
+              <p>
+                These figures were calculated using the values in their
+                respective manuals and studies.
+              </p>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">Test</th>
+                    <th style="text-align: right"><em>g-loading</em></th>
+                    <th style="text-align: center">Date Published</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">SB-V</td>
+                    <td style="text-align: right">0.96</td>
+                    <td style="text-align: center">2003</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WAIS</td>
+                    <td style="text-align: right">0.94</td>
+                    <td style="text-align: center">1955</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WAIS-III</td>
+                    <td style="text-align: right">0.93</td>
+                    <td style="text-align: center">1997</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">SB-IV</td>
+                    <td style="text-align: right">0.93</td>
+                    <td style="text-align: center">1986</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">SAT</td>
+                    <td style="text-align: right">0.93</td>
+                    <td style="text-align: center">1974-1994</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">GRE</td>
+                    <td style="text-align: right">0.92</td>
+                    <td style="text-align: center">1981-2001</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WAIS-IV</td>
+                    <td style="text-align: right">0.92</td>
+                    <td style="text-align: center">2008</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WJ-IV COG</td>
+                    <td style="text-align: right">0.91</td>
+                    <td style="text-align: center">2014</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">AGCT</td>
+                    <td style="text-align: right">0.91</td>
+                    <td style="text-align: center">1941</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WISC-V</td>
+                    <td style="text-align: right">0.90</td>
+                    <td style="text-align: center">2014</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WISC-IV</td>
+                    <td style="text-align: right">0.90</td>
+                    <td style="text-align: center">2003</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WAIS-R</td>
+                    <td style="text-align: right">0.90</td>
+                    <td style="text-align: center">1981</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WISC-III</td>
+                    <td style="text-align: right">0.90</td>
+                    <td style="text-align: center">1991</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WB</td>
+                    <td style="text-align: right">0.90</td>
+                    <td style="text-align: center">1951</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">WASI-II</td>
+                    <td style="text-align: right">0.86</td>
+                    <td style="text-align: center">2011</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">RIAS</td>
+                    <td style="text-align: right">0.86</td>
+                    <td style="text-align: center">2003</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- faq-content -->
+          </li>
+
+          <li>
+            <a class="trigger" href="#0"
+              >What could be some of the g-loadings for online tests?</a
+            >
+            <div class="faq-content">
+              <p>These were calculated using values from IQExams.</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">Test</th>
+                    <th style="text-align: right"><em>g-loading</em></th>
+                    <th style="text-align: center">ωₕ</th>
+                    <th style="text-align: center">α</th>
+                    <th style="text-align: center">n at time of analysis</th>
+                    <th style="text-align: center">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">HumanIQ^</td>
+                    <td style="text-align: right">0.747</td>
+                    <td style="text-align: center">0.680</td>
+                    <td style="text-align: center">0.863</td>
+                    <td style="text-align: center">2,543</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">High Range RT^</td>
+                    <td style="text-align: right">0.738</td>
+                    <td style="text-align: center">0.664</td>
+                    <td style="text-align: center">0.842</td>
+                    <td style="text-align: center">458</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Tero41^</td>
+                    <td style="text-align: right">0.733</td>
+                    <td style="text-align: center">0.655</td>
+                    <td style="text-align: center">0.869</td>
+                    <td style="text-align: center">1,172</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">LDSE^</td>
+                    <td style="text-align: right">0.724</td>
+                    <td style="text-align: center">0.638</td>
+                    <td style="text-align: center">0.925</td>
+                    <td style="text-align: center">166</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Logica Stella</td>
+                    <td style="text-align: right">0.719</td>
+                    <td style="text-align: center">0.630</td>
+                    <td style="text-align: center">0.858</td>
+                    <td style="text-align: center">1,492</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Astrolab36</td>
+                    <td style="text-align: right">0.715</td>
+                    <td style="text-align: center">0.624</td>
+                    <td style="text-align: center">0.861</td>
+                    <td style="text-align: center">372</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Octagon</td>
+                    <td style="text-align: right">0.711</td>
+                    <td style="text-align: center">0.616</td>
+                    <td style="text-align: center">0.877</td>
+                    <td style="text-align: center">393</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Processor40^</td>
+                    <td style="text-align: right">0.689</td>
+                    <td style="text-align: center">0.578</td>
+                    <td style="text-align: center">0.882</td>
+                    <td style="text-align: center">500</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Matrix3x3</td>
+                    <td style="text-align: right">0.681</td>
+                    <td style="text-align: center">0.565</td>
+                    <td style="text-align: center">0.907</td>
+                    <td style="text-align: center">333</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Fuse</td>
+                    <td style="text-align: right">0.678</td>
+                    <td style="text-align: center">0.559</td>
+                    <td style="text-align: center">0.823</td>
+                    <td style="text-align: center">372</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Level</td>
+                    <td style="text-align: right">0.674</td>
+                    <td style="text-align: center">0.554</td>
+                    <td style="text-align: center">0.779</td>
+                    <td style="text-align: center">362</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Backspace</td>
+                    <td style="text-align: right">0.657</td>
+                    <td style="text-align: center">0.526</td>
+                    <td style="text-align: center">0.842</td>
+                    <td style="text-align: center">239</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">HoudinIQ^</td>
+                    <td style="text-align: right">0.651</td>
+                    <td style="text-align: center">0.517</td>
+                    <td style="text-align: center">0.797</td>
+                    <td style="text-align: center">432</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">ArithmetIQ</td>
+                    <td style="text-align: right">0.630</td>
+                    <td style="text-align: center">0.498</td>
+                    <td style="text-align: center">0.799</td>
+                    <td style="text-align: center">471</td>
+                    <td style="text-align: center">Numerical</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">EvolutionaryTS^</td>
+                    <td style="text-align: right">0.603</td>
+                    <td style="text-align: center">0.443</td>
+                    <td style="text-align: center">0.752</td>
+                    <td style="text-align: center">245</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Momentum</td>
+                    <td style="text-align: right">0.603</td>
+                    <td style="text-align: center">0.442</td>
+                    <td style="text-align: center">0.733</td>
+                    <td style="text-align: center">876</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">PINOT40^</td>
+                    <td style="text-align: right">0.599</td>
+                    <td style="text-align: center">0.450</td>
+                    <td style="text-align: center">0.754</td>
+                    <td style="text-align: center">271</td>
+                    <td style="text-align: center">Numerical</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">PMA32E^</td>
+                    <td style="text-align: right">0.581</td>
+                    <td style="text-align: center">0.411</td>
+                    <td style="text-align: center">0.666</td>
+                    <td style="text-align: center">1,333</td>
+                    <td style="text-align: center">Spatial</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Spat Analogies^</td>
+                    <td style="text-align: right">0.578</td>
+                    <td style="text-align: center">0.407</td>
+                    <td style="text-align: center">0.735</td>
+                    <td style="text-align: center">512</td>
+                    <td style="text-align: center">Verbal</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">Analogix</td>
+                    <td style="text-align: right">0.390</td>
+                    <td style="text-align: center">0.209</td>
+                    <td style="text-align: center">0.650</td>
+                    <td style="text-align: center">289</td>
+                    <td style="text-align: center">Verbal</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"><strong>Average</strong></td>
+                    <td style="text-align: right">0.675</td>
+                    <td style="text-align: center">0.563</td>
+                    <td style="text-align: center">0.813</td>
+                    <td style="text-align: center">12,831</td>
+                    <td style="text-align: center">N/A</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                ^ means the distribution may not be normal, so interpret the
+                values with caution.
+              </p>
+              <p>
+                <em
+                  >Results for all tests and tiers were calculated around
+                  1/08/2022 to 4/18/2022 and are subject to being altered if
+                  more data is provided (likely not)</em
+                >
+              </p>
+            </div>
+            <!-- faq-content -->
+          </li>
+        </ul>
+        <!-- faq-group -->
+      </div>
+      <!-- faq-items -->
+      <a href="#0" class="cd-close-panel">Close</a>
+    </section>
+    <!-- faq -->
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
