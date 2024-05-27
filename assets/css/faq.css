@@ -317,6 +317,12 @@ header h1 {
   font-size: 35px;
 }
 
+@media only screen and (max-width: 768px){
+nav{
+  z-index: 0 !important;
+}
+}
+
 @media only screen and (min-width: 768px) {
   .cd-close-panel {
     display: none;
